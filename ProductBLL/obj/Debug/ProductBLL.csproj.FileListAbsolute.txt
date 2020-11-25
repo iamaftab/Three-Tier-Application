@@ -1,0 +1,9 @@
+C:\Users\Aftab Jamil\source\repos\ThreeTierApplication\ProductBLL\bin\Debug\ProductBLL.dll
+C:\Users\Aftab Jamil\source\repos\ThreeTierApplication\ProductBLL\bin\Debug\ProductBLL.pdb
+C:\Users\Aftab Jamil\source\repos\ThreeTierApplication\ProductBLL\bin\Debug\ProductDAL.dll
+C:\Users\Aftab Jamil\source\repos\ThreeTierApplication\ProductBLL\bin\Debug\ProductDAL.pdb
+C:\Users\Aftab Jamil\source\repos\ThreeTierApplication\ProductBLL\obj\Debug\ProductBLL.csprojAssemblyReference.cache
+C:\Users\Aftab Jamil\source\repos\ThreeTierApplication\ProductBLL\obj\Debug\ProductBLL.csproj.CoreCompileInputs.cache
+C:\Users\Aftab Jamil\source\repos\ThreeTierApplication\ProductBLL\obj\Debug\ProductBLL.csproj.CopyComplete
+C:\Users\Aftab Jamil\source\repos\ThreeTierApplication\ProductBLL\obj\Debug\ProductBLL.dll
+C:\Users\Aftab Jamil\source\repos\ThreeTierApplication\ProductBLL\obj\Debug\ProductBLL.pdb

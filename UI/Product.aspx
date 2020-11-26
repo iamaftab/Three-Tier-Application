@@ -10,6 +10,9 @@
         .auto-style1 {
             text-align: center;
         }
+        .auto-style2 {
+            height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -27,7 +30,7 @@
                         <asp:TextBox ID="txtProductName" runat="server" Width="152px"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorName" runat="server" ErrorMessage="Please enter product name" ControlToValidate="txtProductName" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorName" runat="server" ErrorMessage="Please enter product name" ControlToValidate="txtProductName" ForeColor="Red" Display="Dynamic" SetFocusOnError="True"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -42,7 +45,7 @@
                         </asp:DropDownList>
                     </td>
                     <td>
-                        <asp:Label ID="lblCategory" runat="server" ForeColor="Red"></asp:Label>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorCategory" runat="server" ControlToValidate="ddlCategory" Display="Dynamic" ErrorMessage="Please select a category" ForeColor="Red" InitialValue="-1" SetFocusOnError="True"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -53,12 +56,12 @@
 
                 </tr>
                 <tr>
-                    <td>MRP:</td>
-                    <td>
-                        <asp:TextBox ID="txtMRP" runat="server" Width="152px" TextMode="Number"></asp:TextBox>
+                    <td class="auto-style2">MRP:</td>
+                    <td class="auto-style2">
+                        <asp:TextBox ID="txtMRP" runat="server" Width="152px"></asp:TextBox>
                     </td>
-                    <td>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorPrice" runat="server" ErrorMessage="Please enter price of the product" ControlToValidate="txtMRP" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <td class="auto-style2">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidatorPrice" runat="server" ControlToValidate="txtMRP" Display="Dynamic" ErrorMessage="Please enter number only" ForeColor="Red" SetFocusOnError="True" ValidationExpression="\d+"></asp:RegularExpressionValidator>
                     </td>
 
                 </tr>

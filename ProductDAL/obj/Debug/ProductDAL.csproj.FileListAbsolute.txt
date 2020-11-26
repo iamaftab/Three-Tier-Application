@@ -1,6 +1,5 @@
 C:\Users\Aftab Jamil\source\repos\ThreeTierApplication\ProductDAL\bin\Debug\ProductDAL.dll
 C:\Users\Aftab Jamil\source\repos\ThreeTierApplication\ProductDAL\bin\Debug\ProductDAL.pdb
-C:\Users\Aftab Jamil\source\repos\ThreeTierApplication\ProductDAL\obj\Debug\ProductDAL.csprojAssemblyReference.cache
 C:\Users\Aftab Jamil\source\repos\ThreeTierApplication\ProductDAL\obj\Debug\ProductDAL.csproj.CoreCompileInputs.cache
 C:\Users\Aftab Jamil\source\repos\ThreeTierApplication\ProductDAL\obj\Debug\ProductDAL.dll
 C:\Users\Aftab Jamil\source\repos\ThreeTierApplication\ProductDAL\obj\Debug\ProductDAL.pdb

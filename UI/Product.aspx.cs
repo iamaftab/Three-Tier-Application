@@ -11,6 +11,7 @@ namespace UI
     public partial class Product : System.Web.UI.Page
     {
         readonly BusinessLogic BL = new BusinessLogic();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -22,23 +23,24 @@ namespace UI
 
         protected void BtnInsert_Click(object sender, EventArgs e)
         {
-            if (ddlCategory.SelectedValue == "-1")
+            if (!string.IsNullOrEmpty(txtMRP.Text))
             {
-                lblCategory.Text = "Please select the category.";
-            }
-            else
-            {
-                double price = double.Parse(txtMRP.Text);
-
+                _ = double.TryParse(txtMRP.Text, out double price);
                 BL.InsertProduct(txtProductName.Text, ddlCategory.SelectedValue, txtProductDesc.Text, price);
-
-                GridViewGetData.DataSource = BL.GetProduct();
-                GridViewGetData.DataBind();
                 txtProductName.Text = "";
                 txtProductDesc.Text = "";
                 ddlCategory.SelectedValue = "-1";
                 txtMRP.Text = "";
+                txtProductName.Focus();
             }
+            else
+            {
+                txtMRP.Focus();
+            }
+            GridViewGetData.DataSource = BL.GetProduct();
+            GridViewGetData.DataBind();
+            
+            
         }
 
         protected void GridViewGetData_SelectedIndexChanged(object sender, EventArgs e)

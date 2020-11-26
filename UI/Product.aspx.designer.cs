@@ -60,13 +60,13 @@ namespace UI
         protected global::System.Web.UI.WebControls.DropDownList ddlCategory;
 
         /// <summary>
-        /// lblCategory control.
+        /// RequiredFieldValidatorCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCategory;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorCategory;
 
         /// <summary>
         /// txtProductDesc control.
@@ -87,13 +87,13 @@ namespace UI
         protected global::System.Web.UI.WebControls.TextBox txtMRP;
 
         /// <summary>
-        /// RequiredFieldValidatorPrice control.
+        /// RegularExpressionValidatorPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorPrice;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorPrice;
 
         /// <summary>
         /// BtnInsert control.
